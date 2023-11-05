@@ -1,6 +1,7 @@
 ## Spring Basic
 
 * Interface `ApplicationContext` adalah core dari Spring dan representasi dari container Inversion of Control. Untuk membuat `ApplicationContext` dengan annotation, harus membuat Configuration class yg ditandai dengan annotation `@Configuration`.
+* Jika ingin menjalankan spring secara otomatis tanpa menggunakan `ApplicationContext`, gunakan annotation `@SpringBootApplication` lalu buat main class dan gunakan class `SpringApplication` dan method `run()`.
 * Untuk menjalankan configuration lebih dari satu, gunakan annotation `@Import(value = {YourConfiguration.class, AnotherConfiguration.class})` atau gunakan `@ComponentScan(basePackage = "namaPackages")` jika diletakkan dalam satu package yg sama
 * Singleton merupakan salah satu design pattern dengan konsep pembuatan object hanya sekali namun dapat digunakan berkali-kali dengan output yg sama. Lihat implementasinya di [Class SingletonTest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/SingletonTest.java)
 
@@ -26,4 +27,4 @@
 
 * Pembuatan implementation interface digunakan agar tidak terjadi duplicate bean saat interface memiliki banyak turunan dan saat ingin mengganti model class nya, cukup ubah class implementasinya tanpa harus mengubah dependency yg menggunakan interface nya. Lihat implementasiya di [Class InheritanceTest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/InheritanceTest.java)
 
-* Annotation `@EventListener` digunakan untuk menandai terjadinya event pada sebuah listener. Listener event adalah sebuah komponen atau metode dalam sebuah program yang menunggu dan merespons terhadap kejadian (events) yang terjadi dalam sistem atau aplikasi.
+* Annotation `@EventListener` digunakan untuk menandai terjadinya event pada sebuah listener. Listener event adalah sebuah komponen atau metode dalam sebuah program yang menunggu dan merespons terhadap kejadian (events) yang terjadi dalam sistem atau aplikasi. Lihat implementasinya di [Class EventListenerTest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/EventListenerTest.java)
