@@ -6,6 +6,37 @@
 * Jika terjadi duplicate bean, terdapat beberapa opsi untuk solusinya:
     - Membuat nama/method bean yg berbeda, inject nama methodnya
     - Membuat primary bean, tambahkan annotation `@Primary`
-* Bean dapat dibuat sebagai lazy
+* Bean dapat dibuat sebagai lazy (akan dipanggil ketika dibutuhkan), tambahkan annotation `@Lazy`. 
 * Dependency injection adalah suatu teknik dalam menyediakan object dengan membuatnya menjadi sebuah parameter di constructor ataupun di setter method dari pada membuatnya langsung di classnya. Lihat implementasinya di [Class DITest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/DITest.java)
 * Case circular dependencies adalah terjadinya lingkaran dependency, bean A butuh bean B, bean B butuh bean C dan bean C butuh bean A maka spring akan menganggapnya error.
+* Terdapat beberapa bean scope:
+    - singleton: default/hanya dibuat sekali dalam spring IoC.
+    - prototype: selalu dibuat object baru setiap kali bean diakses.
+    - request: dibuat baru per HTTP request (only web app)
+    - session: dibuat baru per HTTP session (only web app)
+    - application: dibuat baru per ServletContext (only web app)
+    - websocket: dibuat baru per WebSocket 
+* Tambahkan annotation `@Scope("scopeName")` pada bean untuk mengatur scope.
+* Mengkonfigurasi bean untuk menjalankan ketika spring dibuat dan ditutup ketika spring selesai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
