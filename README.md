@@ -25,3 +25,5 @@
 * Mengkonfigurasi bean untuk menjalankan ketika spring dibuat dan ditutup ketika spring selesai.
 
 * Pembuatan implementation interface digunakan agar tidak terjadi duplicate bean saat interface memiliki banyak turunan dan saat ingin mengganti model class nya, cukup ubah class implementasinya tanpa harus mengubah dependency yg menggunakan interface nya. Lihat implementasiya di [Class InheritanceTest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/InheritanceTest.java)
+
+* Annotation `@EventListener` digunakan untuk menandai terjadinya event pada sebuah listener. Listener event adalah sebuah komponen atau metode dalam sebuah program yang menunggu dan merespons terhadap kejadian (events) yang terjadi dalam sistem atau aplikasi.
