@@ -9,12 +9,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserService implements ApplicationEventPublisherAware {
 
-    private ApplicationEventPublisher applicationEventPublisher;
-
     @Override
     @Autowired
     public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
-        this.applicationEventPublisher = applicationEventPublisher;
     }
 
     public boolean loginUser(String username, String password) {

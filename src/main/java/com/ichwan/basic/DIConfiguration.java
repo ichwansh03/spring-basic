@@ -3,6 +3,7 @@ package com.ichwan.basic;
 import com.ichwan.basic.data.Bar;
 import com.ichwan.basic.data.Foo;
 import com.ichwan.basic.data.FooBar;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -21,7 +22,7 @@ public class DIConfiguration {
 
     //tambahkan @Qualifier("namaBean") pada parameter jika ingin memilih dependency
     @Bean
-    public FooBar fooBar(Foo foo, Bar bar){
+    public FooBar fooBar(@Qualifier("foo") Foo foo, Bar bar){
         return new FooBar(foo, bar);
     }
 }
