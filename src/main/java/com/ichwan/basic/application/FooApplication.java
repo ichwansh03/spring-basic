@@ -12,7 +12,7 @@ public class FooApplication {
 
     //error, delete parameter Bar
     @Bean
-    public Foo foo(Bar bar){
+    public Foo foo(){
         return new Foo();
     }
 

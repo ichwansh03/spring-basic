@@ -13,7 +13,7 @@
  
 * Dependency injection adalah suatu teknik dalam menyediakan object dengan membuatnya menjadi sebuah parameter di constructor ataupun di setter method dari pada membuatnya langsung di classnya. Lihat implementasinya di [Class DITest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/DITest.java)
 * Case circular dependencies adalah terjadinya lingkaran dependency, bean A butuh bean B, bean B butuh bean C dan bean C butuh bean A maka spring akan menganggapnya error.
-* Jika ingin meng-inject multiple constructor, gunakan annotation `@Autowired`. Pada setter injection, diwajibkan menggunakan `@Autowired`
+* Jika ingin meng-inject multiple constructor, gunakan annotation `@Autowired`. Pada setter injection, diwajibkan menggunakan `@Autowired`. Annotation ini dapat digunakan di setter method, field, constructor dan method dengan multiple argument.
 
 * Terdapat beberapa bean scope:
     - singleton: default/hanya dibuat sekali dalam spring IoC.

@@ -5,13 +5,13 @@ import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+@Getter
 @Component
 public class CategoryService {
 
-    @Getter
+    @Autowired
     private CategoryRepository categoryRepository;
 
-    @Autowired
     public void setCategoryRepository(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
