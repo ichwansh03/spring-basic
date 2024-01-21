@@ -31,4 +31,8 @@
 
 * Annotation `@EventListener` digunakan untuk menandai terjadinya event pada sebuah listener. Listener event adalah sebuah komponen atau metode dalam sebuah program yang menunggu dan merespons terhadap kejadian (events) yang terjadi dalam sistem atau aplikasi. Lihat implementasinya di [Class EventListenerTest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/EventListenerTest.java)
 
+* Anotasi `@ComponentScan` digunakan untuk mengimport class dengan menambahkan value basePackages untuk membaca file pada suatu package dan sub package nya ketimbang di import satu persatu.
+
+* Anotasi `@Component` merupakan anotasi alternatif untuk penggunaan @Bean, sama dengan @Bean namun anotasi @Component hanya dapat digunakan pada satu object saja dalam satu class. Hal ini akan banyak diterapkan pada Spring. Anotasi @Component digunakan pada level class, bukan method.
+
 * Pastikan hanya ada satu main class saat menjalankan `SpringBootApplication`
