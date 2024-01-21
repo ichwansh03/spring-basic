@@ -31,7 +31,7 @@
 
 * Annotation `@EventListener` digunakan untuk menandai terjadinya event pada sebuah listener. Listener event adalah sebuah komponen atau metode dalam sebuah program yang menunggu dan merespons terhadap kejadian (events) yang terjadi dalam sistem atau aplikasi. Lihat implementasinya di [Class EventListenerTest](https://github.com/ichwansh03/spring-basic/blob/main/src/test/java/com/ichwan/basic/EventListenerTest.java)
 
-* Pada dokumentasi anotasi @Bean, terdapat `initMethod()` dan `destroyMethod()`. Kedua method tersebut digunakan untuk memanggil dan menutup object bean ketika spring dijalankan. Alternatif dari kedua method tersebut, kita dapat menggunakan anotasi `@PostConstruct` untuk memanggil bean ketika spring dijalankan dan `@PreDestroy` untuk menutup bean. 
+* Pada dokumentasi anotasi @Bean, terdapat `initMethod()` dan `destroyMethod()`. Kedua method tersebut digunakan untuk memanggil dan menutup object bean ketika spring dijalankan. Alternatif dari kedua method tersebut, kita dapat menggunakan anotasi `@PostConstruct` untuk memanggil bean ketika spring dijalankan dan `@PreDestroy` untuk menutup bean. Hal ini dapat kita lakukan jika kita ingin melakukan integrasi dengan Life-Cycle nya spring framework.
 
 * Anotasi `@ComponentScan` digunakan untuk mengimport class dengan menambahkan value basePackages untuk membaca file pada suatu package dan sub package nya ketimbang di import satu persatu.
 
