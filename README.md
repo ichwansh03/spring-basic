@@ -37,4 +37,6 @@
 
 * Anotasi `@Component` merupakan anotasi alternatif untuk penggunaan @Bean, sama dengan @Bean namun anotasi @Component hanya dapat digunakan pada satu object saja dalam satu class. Hal ini akan banyak diterapkan pada Spring. Anotasi @Component digunakan pada level class, bukan method.
 
+* Anotasi `@Qualifier` digunakan sebagai penanda jika terdapat dua object bean yang tipe objectnya sama ketika dilakukan injection. Gunakan `@Qualifier("nama bean-nya")` agar tidak terjadi error qualifying bean exception.
+
 * Pastikan hanya ada satu main class saat menjalankan `SpringBootApplication`
